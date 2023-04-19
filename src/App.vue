@@ -1,21 +1,20 @@
 <template>
-  <Abot /> 
+  <Template />
 </template>
 
 <script>
-import Abot from './components/Abot.vue';
-
-
+import Template from './components/template.vue';
 
 
 export default {
   name: 'App',
   components: {
-    Abot
-}
+    Template
+  }
 }
 </script>
 
+    Template
 <style>
 
 </style>
