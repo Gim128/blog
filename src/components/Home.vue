@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Hello from Home</h1>
-    <button v-on:click="hello">Touch me</button>
+    <button v-on:click="hello('data')">Touch me</button>
   </div>
 </template>
 
@@ -13,8 +13,9 @@ export default {
         msg: String
     },
     methods:{
-        hello(){
-            alert("Hello function called!")
+        hello(item){
+            // alert("Hello function called!")
+            console.warn(item);
         }
     }
 }
