@@ -1,20 +1,25 @@
 <template>
-  <Template />
+  <h1 class="hhh">Data Binding in Vuejs</h1>
+  <databinding />
 </template>
 
 <script>
-import Template from './components/template.vue';
+import Databinding from './components/Databinding.vue'
+
 
 
 export default {
   name: 'App',
   components: {
-    Template
+    Databinding
+    
   }
 }
 </script>
 
-    Template
-<style>
-
+<style scoped>
+  .hhh{
+    padding: 48px 10px 73px 800px;
+    color: blue;
+  }
 </style>
