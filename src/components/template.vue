@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p v-html="header"></p>
-    <h1>Template in vuejs</h1>
-    <h2 v-once>{{ name }}</h2>
-    <h2>{{ name1 }}</h2>
-    <button v-bind:disabled="btnDisable" v-on:click="hello">Click me</button>
-    <h3>{{ ok? "yes":"no" }}</h3>
+    <h1 class="vueStyle">Class & Style Bindings</h1>
+    <h1 v-bind:style="{color: colorName}">Style Binding</h1>
+    <h1 v-bind:class="{display:show, vueStyle:show}">Class with Object</h1>
+    <h1 v-bind:class="[d, v]">Class with Array</h1>
+    <h1 v-bind:class="['display', 'vueStyle']">Class with Array</h1>
+    <h1 v-bind:class="[checkDisplay?d:v]">Class with Array</h1>
   </div>
 </template>
 
@@ -14,28 +14,27 @@
 
 export default {
     // eslint-disable-next-line vue/multi-word-component-names
-    name: "templateview",
+    name: "templateview",    
     data(){
         return{
-            name: "Mahinda",
-            name1: "Rajapaksha",
-            ok:true,
-            header: "<h1>Insert HTML in Vuejs</h1>",
-            btnDisable: true
-        }
-    },
-    methods: {
-        hello(){
-            // alert("Thanks for Click")
-            // this.name1="Hora" 
-            this.ok=!this.ok
+            colorName:'skyblue',
+            show:true,
+            // whenm you use single quote to property from here
+            d:'display',
+            v:'vueStyle',
+            checkDisplay:true
 
         }
-    }
-        
+    } 
 };
 </script>
 
-<style>
-
+<style scoped>
+    .vueStyle{
+        color: blue;
+    }
+    .display{
+       
+        background-color: khaki;
+    }
 </style>
