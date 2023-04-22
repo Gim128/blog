@@ -1,18 +1,17 @@
 <template>
     <div>
-        <button v-on:click="UpdatedTitle">Update Header</button>
+        <h1>child component</h1>  
+        <h3 v-for="user in users" :key="user.email">{{ user.email}}</h3>
     </div>
 </template>
 
 <script>
     export default {
         name: 'ChildComponent',
-
-        methods: {
-            UpdatedTitle(){
-                this.$emit('changeTitle', 'Props has been passed')
-            }
-        }
+        props: [
+            'users'
+        ]
+       
     }
 </script>
 

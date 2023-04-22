@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <home data="name is Leo" msg="hello PKYA" />
+  <home/>
 </template>
 
 <script>

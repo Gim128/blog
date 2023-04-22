@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <ChildComponent v-on:changeTitle="updateTitleText($event)" />
+    <ChildComponent v-bind:users=users />
   </div>
 </template>
 
@@ -17,7 +17,12 @@ export default {
 
     data(){
       return {
-        title: 'Child to Parent Data',
+       users:[
+        {name: 'Gimhan Praba', email:'gimhan@gmail.com'},
+        {name: 'Santhush Praba', email:'santhusn@gmail.com'},
+        {name: 'Jeewan Praba', email:'jeewan@gmail.com'},
+        {name: 'Raveen Praba', email:'raveenn@gmail.com'},
+       ]
       }
     },
 
