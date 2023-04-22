@@ -1,18 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <LoginForm />
+  <SignUpForm />
 </template>
 
 <script>
+import SignUpForm from './components/SignUpForm.vue';
 
-import LoginForm from './components/LoginForm.vue';
+
+
 
 export default {
   name: 'App',
   components: {
-    LoginForm
-
-  }
+    SignUpForm
+}
 }
 </script>
 
