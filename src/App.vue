@@ -1,16 +1,16 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <home/>
+  <LoginForm />
 </template>
 
 <script>
-import Home from './components/Home.vue'
 
+import LoginForm from './components/LoginForm.vue';
 
 export default {
   name: 'App',
   components: {
-    Home
+    LoginForm
 
   }
 }
