@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <h1>beforeMount & Mounted life-cycle Hooks</h1>
-    
-    <Home />
+    <h1>beforeDestroy & Destroyed life-cycle Hooks</h1>
+    <div v-if="display">
+      <Home />
+    </div>
+    <button v-on:click="toggle">Toggle Me!</button>
   </div>
 </template>
 
@@ -13,15 +15,21 @@ import Home from './components/Home.vue';
 export default {
   name: 'App',
 
+  data(){
+    return{
+      display: true
+    }
+  },
+
   components: {
     Home
   },
 
-  data(){
-    return{
-      name: 'Gimhan Pabasara'
+  methods: {
+    toggle(){
+      this.display = !this.display
     }
-  }
+  },
 };
 </script>
 

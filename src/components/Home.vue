@@ -28,11 +28,18 @@ export default {
     //   this.name = "Leo"
     //   console.warn('Created', this.name)
     // },
-    beforeMount:function(){
-      console.warn('beforeMount', document.getElementById('demo'))
+    // beforeMount:function(){
+    //   console.warn('beforeMount', document.getElementById('demo'))
+    // },
+    // mounted:function(){
+    //   console.warn('Mount', document.getElementById('demo'))
+    // },
+    beforeDestroy() {
+      alert("beforeDestroy method called")
     },
-    mounted:function(){
-      console.warn('Mount', document.getElementById('demo'))
+
+    destroyed() {
+      alert("Destroyed method called")
     },
    
     components: {
