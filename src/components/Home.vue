@@ -1,12 +1,12 @@
 <template>
   <div>
-    <ChildComponent />
+    <h1>{{ name }}</h1>
   </div>
 </template>
 
 <script>
 
-import ChildComponent from './ChildComponent.vue';
+
 
 export default {
     name: 'HomeComponent',
@@ -17,26 +17,27 @@ export default {
 
     data(){
       return{
-        
+        name: "Gimhan pabasara"
       }
     },
 
     beforeCreate:function(){
-      console.warn('beforeCreate');
+      console.warn('beforeCreate', this.name);
     },
     created:function(){
-      console.warn('Created')
+      this.name = "Leo"
+      console.warn('Created', this.name)
     },
-    beforeMount:function(){
-      console.warn('beforeMount ')
-    },
-    mounted:function(){
-      console.warn('Mount ')
-    },
+    // beforeMount:function(){
+    //   console.warn('beforeMount ')
+    // },
+    // mounted:function(){
+    //   console.warn('Mount ')
+    // },
    
     components: {
-    ChildComponent
-},
+
+    },
 
     
 
