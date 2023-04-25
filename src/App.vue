@@ -1,22 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <LoginForm />
+  <div id="app">
+    <h1>Filter in VUEJS</h1>
+    <h1>{{ uppercase(name)  }}</h1>
+    <Home />
+  </div>
 </template>
 
 <script>
-import LoginForm from './components/LoginForm.vue';
-
-
-
-
+import Home from './components/Home.vue';
 
 
 export default {
   name: 'App',
+
   components: {
-    LoginForm
-}
-}
+    Home
+  },
+
+  data(){
+    return{
+      name: 'Gimhan Pabasara'
+    }
+  }
+};
 </script>
 
 <style>
