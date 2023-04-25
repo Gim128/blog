@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h1>Filter in VUEJS</h1>
-    <h1>{{ uppercase(name)  }}</h1>
+    <h1>beforeCreate & created life-cycle Hooks</h1>
+    
     <Home />
   </div>
 </template>
