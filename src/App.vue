@@ -1,10 +1,12 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <SignUpForm />
+  <LoginForm />
 </template>
 
 <script>
-import SignUpForm from './components/SignUpForm.vue';
+import LoginForm from './components/LoginForm.vue';
+
+
 
 
 
@@ -12,7 +14,7 @@ import SignUpForm from './components/SignUpForm.vue';
 export default {
   name: 'App',
   components: {
-    SignUpForm
+    LoginForm
 }
 }
 </script>
