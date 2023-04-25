@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{ name }}</h1>
+    <h1 id="demo">{{ name }}</h1>
   </div>
 </template>
 
@@ -21,19 +21,19 @@ export default {
       }
     },
 
-    beforeCreate:function(){
-      console.warn('beforeCreate', this.name);
-    },
-    created:function(){
-      this.name = "Leo"
-      console.warn('Created', this.name)
-    },
-    // beforeMount:function(){
-    //   console.warn('beforeMount ')
+    // beforeCreate:function(){
+    //   console.warn('beforeCreate', this.name);
     // },
-    // mounted:function(){
-    //   console.warn('Mount ')
+    // created:function(){
+    //   this.name = "Leo"
+    //   console.warn('Created', this.name)
     // },
+    beforeMount:function(){
+      console.warn('beforeMount', document.getElementById('demo'))
+    },
+    mounted:function(){
+      console.warn('Mount', document.getElementById('demo'))
+    },
    
     components: {
 

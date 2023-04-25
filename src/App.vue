@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>beforeCreate & created life-cycle Hooks</h1>
+    <h1>beforeMount & Mounted life-cycle Hooks</h1>
     
     <Home />
   </div>
