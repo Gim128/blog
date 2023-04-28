@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <h1>beforeDestroy & Destroyed life-cycle Hooks</h1>
-    <div v-if="display">
       <Home />
-    </div>
-    <button v-on:click="toggle">Toggle Me!</button>
   </div>
 </template>
 
@@ -17,7 +13,7 @@ export default {
 
   data(){
     return{
-      display: true
+
     }
   },
 
@@ -26,9 +22,7 @@ export default {
   },
 
   methods: {
-    toggle(){
-      this.display = !this.display
-    }
+    
   },
 };
 </script>
