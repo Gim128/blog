@@ -1,12 +1,12 @@
 <template>
   <div>
     <h1 id="demo">{{ name }}</h1>
-    <ActiveBoot />
+    <PostComponnet />
   </div>
 </template>
 
 <script>
-import ActiveBoot from './ActiveBoot.vue';
+import PostComponnet from './PostComponent.vue';
 
 
 export default {
@@ -16,12 +16,12 @@ export default {
 
   data() {
     return {
-      name: "Bootstrap with Vue",
+      name: "Submit Form Data to API",
     };
   },
 
   components: {
-    ActiveBoot
+    PostComponnet
 },
 };
 </script>
